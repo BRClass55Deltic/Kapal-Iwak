@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapal Iwak</title>
+  
+  <!-- Font Tema Laut & Petualangan -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>⚓ Kapal Iwak ⚓</h1>
+
+  <div class="container">
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <div class="info">
+      <div class="hud-item">❤️ Health: <span id="healthDisplay">❤️ ❤️ ❤️</span></div>
+      <div class="hud-item">🐟 Skor: <span id="score">0 / 100</span></div>
+      <div class="hud-item">⏱️ Waktu: <span id="timer">60s</span></div>
+    </div>
+
+    <div class="controls-hint">
+      📍 Gunakan Tombol Panah (↑ ↓ ← →) untuk mengemudikan kapal. Kumpulkan ikan, hindari batu, dan jangan menabrak pulau!
+    </div>
+  </div>
+
+  <div id="gameMenu" class="game-menu">
+    <div class="menu-box">
+      <h2 id="menuTitle">Kapal Nelayan</h2>
+      <p id="menuText">Kumpulkan 100 skor sebelum waktu 60 detik habis!</p>
+      <button id="gameButton">Mulai Berlayar</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
